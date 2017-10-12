@@ -90,7 +90,7 @@ section[data-background] h1 {
   position: relative !important;
 }
 
-.title {
-    font-size: 6em;
+h1.title{
+    font-size: 7em;
     font-family: 'Modak', cursive;
 }
