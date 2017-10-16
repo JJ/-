@@ -145,15 +145,67 @@ git push</code></pre>
 	  <section data-background='img/hackathon.jpg' alt='Hackaton de Perl' >
 
 	  </section>
-	  <section><h1>Hackatón snake</h1>
+	  <section><h1>Hackatón 💨</h1>
 	    <pre><code>say "=> $provincia $current";
-  my $url = "http://www.juntadeandalucia.es/medioambiente/atmosfera/informes_siva/$meses[$mes-1]$year/n$provincia$date.htm";
-  
-  my $content = get( $url );</code></pre>
+my $url = "http://www.juntadeandalucia.es/medioambiente/atmosfera/informes_siva/$meses[$mes-1]$year/n$provincia$date.htm";
+my $content = get( $url );</code></pre>
 	  </section>
 
 	</section>
-	
+
+	<!-- Adaptación del artista al entorno -->
+	<section>
+	  <section data-background='img/cocodrilo-Nake.jpg'
+	alt='Cocodrilo en la carretera de la Sierra'>
+	  <aside class='notes'>Los pintores tienen que adaptarse a los
+	materiales, el tiempo que tienen (una jam, o hacerlo
+	rápidamente para que no le pillen los municipales) y el
+	    espacio. Eso lo aprenden sobre la marcha y en la
+	    calle</aside>
+	  </section>
+
+	  <section><h1>En la ☁</h1>
+	    <pre><code>func init() {
+	// Log as JSON instead of the default ASCII formatter.
+	logrus.SetFormatter(&logrus.JSONFormatter{})
+	name, _ := os.Hostname()
+	// Declare logrus plugin
+	if os.Getenv("LOGZ_TOKEN") != "" {
+		logzio_add( name, os.Getenv("LOGZ_TOKEN"),  os.Getenv("LOGZ_HOST") )
+	}
+	if os.Getenv("PAPERTRAIL_HOST") != "" {
+		papertrail_add( name, os.Getenv("PAPERTRAIL_HOST"), os.Getenv("PAPERTRAIL_PORT") )
+	}</code></pre>
+	    <aside class='notes'>Cuando se trabaja en la nube, hay que
+	    adaptarse al nodo y las funcionalidades de donde se
+	    trabaje. También tener en cuenta sus limitaciones y su
+	      entorno. Esto se hace aquí usando variables de entorno</aside>
+	  </section>
+	</section>
+
+	<!-- Múltiples formas de expresión -->
+	<section>
+	  <section data-background='img/happy-shit.jpg' alt='Happy
+		   shit'>
+	  </section>
+
+	  <section>
+	    <pre><code>#define MATRIX_PIN P0_9
+#define NLEDS 25
+AnalogIn   ain(P0_22);
+neopixel::Pixel buffer[NLEDS];
+PwmOut speaker(P0_8);
+int max_led = 30;
+void setPixel(uint32_t posicion, uint8_t red, uint8_t green, uint8_t blue) {
+  buffer[posicion].red=red;
+  buffer[posicion].green=green;
+  buffer[posicion].blue=blue;
+}</code></pre>
+	    <aside class='notes'>Programación en C++ para la miniblip,
+	    una tarjeta basada en un microprocesador y que aprendimos
+	      a usar, por primera vez, en un hackatón...</aside>
+	  </section>
+	</section>
 	<!-- Créditos -->
 	<section><h2>Créditos</h2>
 	  <ul class='credits'><li><em>Christina's world</em> por
