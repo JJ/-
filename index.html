@@ -118,7 +118,23 @@ git push</code></pre>
 	      en muchas capas que acaban pareciendo un
 	      palimpsesto</aside>
 	  </section>
-	  
+
+	  <section data-background='img/hacktoberfest.jpg'
+		   alt='Camiseta del hacktoberfest'>
+	    <aside class='notes'>Donde se premia con camisetas el
+		   aprendizaje: hacer pull requests, aprender de la
+	      gente. </aside>
+	  </section>
+
+	  <section><h1>Testeando <a href='https://github.com/JJ/tests-python'>🐍</a></h1>
+	    <pre><code>def test_fecha_hito_posterior(self):
+        tam_lista_hitos=len(self.hitos.hitos['hitos'])
+        for i in range(1,tam_lista_hitos):
+            fecha_hito_anterior = datetime.strptime(str(self.hitos.uno(i-1)["fecha"]), "%d/%m/%Y")
+            fecha_hito=datetime.strptime(str(self.hitos.uno(i)["fecha"]), "%d/%m/%Y")
+            self.assertLess(fecha_hito_anterior, fecha_hito, "Los hitos no estan ordenados")
+</code></pre>
+	  </section>	  
 	</section>
 	
 	<!-- Créditos -->
