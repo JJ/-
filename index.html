@@ -95,7 +95,9 @@
 
 	<section data-background='img/arte-callejero-mosaico.jpg'
 		 alt='mosaico arte callejero'>
-	  <aside class='notes'>Pero ¿qué es el arte callejero? Éste va más alla del graffiti para tener diferentes soportes y formatos, desde el graffiti anamórfico, hasta mini-esculturas, pasando por los mosaicos, el <em>stencil</em> o las pintadas de diferente tamaño y formato. El arte callejero es arte que se hace en la calle, casi siempre con artistas que actúan bajo seudónimo, en muchos casos al filo de la ley o directamente fuera de ella, y usando materiales que se puedan acarrear fácilmente o que directamente se puedan desechar en caso de llegar alguien que pueda multarte por hacer graffiti de forma ilegal. Es un arte efímero, expresivo, anónimo, y con un enorme dinamismo.</aside>
+	  <aside class='notes'>Pero ¿qué es el arte callejero? Éste va más alla del graffiti para tener diferentes soportes y formatos, desde el graffiti anamórfico, hasta mini-esculturas, pasando por los mosaicos, el <em>stencil</em> o las pintadas de diferente tamaño y formato. El arte callejero es arte que se hace en la calle, casi siempre con artistas que actúan bajo seudónimo, en muchos casos al filo de la ley o directamente fuera de ella, y usando materiales que se puedan acarrear fácilmente o que directamente se puedan desechar en caso de llegar alguien que pueda multarte por hacer graffiti de forma ilegal. Es un arte efímero, expresivo, anónimo, y con un enorme dinamismo. En <a href='https://en.wikipedia.org/wiki/Street_art'>la wikipedia</a> se define como
+	    <blockquote>visual art created in public locations, usually unsanctioned artwork executed outside of the context of traditional art venues</blockquote>
+	  </aside>
 	</section>
 
 	<!-- Comenzando -->
@@ -180,7 +182,9 @@ git push</code></pre>
             fecha_hito_anterior = datetime.strptime(str(self.hitos.uno(i-1)["fecha"]), "%d/%m/%Y")
             fecha_hito=datetime.strptime(str(self.hitos.uno(i)["fecha"]), "%d/%m/%Y")
             self.assertLess(fecha_hito_anterior, fecha_hito, "Los hitos no estan ordenados")
-</code></pre>
+	    </code></pre>
+
+	    <aside class='notes'>Dentro de este hacktoberfest, esta es una función aportada por un estudiante, y añadida al material que tengo de la asignatura. </aside>
 	  </section>	  
 	</section>
 
